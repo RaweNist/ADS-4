@@ -45,8 +45,7 @@ int countPairs3(int* arr, int len, int value) {
       }
       if (arr[n] + x < value) {
         l = n + 1;
-      }
-      else if (arr[n] + x > value) {
+      } else if (arr[n] + x > value) {
         r = n - 1;
       }
     } while (l <= r);
