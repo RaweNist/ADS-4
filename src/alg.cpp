@@ -31,19 +31,22 @@ int countPairs3(int* arr, int len, int value) {
       int n = (l + r) / 2;
       if (arr[n] + x == value) {
         count++;
-        int na = n - 1;
-        int nb = n + 1;
-        while (arr[na] == arr[n] && na >= l) {
-          count++;
-          na--;
+        if (n - 1 >= l) {
+          int a = n - 1;
+          while (arr[a] == arr[n] && a >= l) {
+            count++;
+            a--;
+          }
         }
-        while (arr[nb] == arr[n] && nb <= r) {
-          count++;
-          nb++;
+        if (n + 1 <= r) {
+          int b = n + 1;
+          while (arr[b] == arr[n] && b <= r) {
+            count++;
+            b++;
+          }
         }
         break;
-      }
-      else if (arr[n] + x < value) {
+      } else if (arr[n] + x < value) {
         l = n + 1;
       } else if (arr[n] + x > value) {
         r = n - 1;
