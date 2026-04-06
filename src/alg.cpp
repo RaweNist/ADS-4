@@ -17,17 +17,21 @@ int countPairs1(int* arr, int len, int value) {
 }
 int countPairs2(int* arr, int len, int value) {
   int count = 0;
+  int r = len-1;
   for (int i = 0; i < len; ++i) {
-    for (int j = len; j > i; --j)
+    int j = r;
+    for (; j > i; --j) {
       if (arr[i] + arr[j] == value) {
         count++;
-        while (arr[j] == arr[j - 1] && j > i)
+        while (arr[j] == arr[j - 1] && i < j - 1)
           j--;
+        r = j;
       }
-    while (i + 1 < len && arr[i] == arr[i + 1])
+    }
+    while (arr[i] == arr[i + 1] && i + 1 < r)
       i++;
-  }
-  return count;
+}		
+return count;
 }
 int countPairs3(int* arr, int len, int value) {
   int count = 0;
