@@ -30,7 +30,7 @@ int countPairs2(int* arr, int len, int value) {
     }
     while (arr[i] == arr[i + 1] && i + 1 < r)
       i++;
-}		
+}
 return count;
 }
 int countPairs3(int* arr, int len, int value) {
