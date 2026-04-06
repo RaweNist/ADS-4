@@ -2,10 +2,10 @@
 
 #include <time.h>
 #include <stdlib.h>
+#include "alg.h"
 
 #include "gtest/gtest.h"
 #include <cstdint>
-#include "alg.h"
 
 #define ARRSIZE1 100000
 #define ARRSIZE2 200000
