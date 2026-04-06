@@ -27,6 +27,7 @@ int countPairs2(int* arr, int len, int value) {
     while (i + 1 < len && arr[i] == arr[i + 1])
       i++;
   }
+  return count;
 }
 int countPairs3(int* arr, int len, int value) {
   int count = 0;
