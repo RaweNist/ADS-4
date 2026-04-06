@@ -33,14 +33,14 @@ int countPairs3(int* arr, int len, int value) {
         count++;
         int a = n - 1;
         if (a >= l) {
-          while (arr[a] == arr[n] && a >= l) {
+          while (arr[a] == arr[n]) {
             count++;
             a--;
           }
         }
         int b = n + 1;
         if (b <= r) {
-          while (arr[b] == arr[n] && b <= r) {
+          while (arr[b] == arr[n]) {
             count++;
             b++;
           }
