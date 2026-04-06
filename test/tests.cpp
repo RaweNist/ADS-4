@@ -2,7 +2,7 @@
 
 #include <time.h>
 #include <stdlib.h>
-
+#include "alg.h"
 #include "gtest/gtest.h"
 
 #define ARRSIZE1 100000
