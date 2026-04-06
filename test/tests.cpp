@@ -1,11 +1,10 @@
 // Copyright 2021 NNTU-CS
-
+#include <cstdint>
 #include <time.h>
 #include <stdlib.h>
 #include "alg.h"
 
 #include "gtest/gtest.h"
-#include <cstdint>
 
 #define ARRSIZE1 100000
 #define ARRSIZE2 200000
