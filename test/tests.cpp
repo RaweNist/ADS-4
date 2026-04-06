@@ -1,7 +1,6 @@
 // Copyright 2021 NNTU-CS
 #include <time.h>
 #include <stdlib.h>
-#include "alg.h"
 
 #include "gtest/gtest.h"
 
